@@ -41,6 +41,14 @@ services:
     networks: 
       - observability_observability
 
+  nginx:
+      build: ../nginx
+      container_name: nginx
+      ports:
+        - "8080:80"
+      networks: 
+        - observability_observability
+
 networks:
   observability_observability:
     external: true
