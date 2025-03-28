@@ -61,10 +61,12 @@ ELASTIC_APM = {
   # a-z, A-Z, 0-9, -, _, and space
   'SERVICE_NAME': 'codeprogress',
 
+  'SECRET_TOKEN' : "EooGHBpcx6yOqEGSFE",
+
   # Set custom APM Server URL (default: http://localhost:8200)
-  'SERVER_URL': 'http://apm:8200',
+  'SERVER_URL': 'https://01086b03981d40e482f93e7201fecc6c.apm.us-east-1.aws.cloud.es.io:443',
   'DEBUG': True,
-  'ENVIRONMENT': 'production',
+  'ENVIRONMENT': 'my-environment',
 }
 
 ROOT_URLCONF = 'codeprogress.urls'
