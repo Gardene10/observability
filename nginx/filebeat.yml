@@ -21,7 +21,7 @@ filebeat.inputs:
 - type: log
 
   # Change to true to enable this input configuration.
-  enabled: false
+  enabled: true
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
@@ -100,6 +100,8 @@ filebeat.config.modules:
   # Set to true to enable config reloading
   reload.enabled: false
 
+  setup.ilm.overwrite: true
+
   # Period on which files under path should be checked for changes
   #reload.period: 10s
 
@@ -167,8 +169,8 @@ setup.kibana:
 # The cloud.auth setting overwrites the `output.elasticsearch.username` and
 # `output.elasticsearch.password` settings. The format is `<user>:<pass>`.
 #cloud.auth:
-# cloud.id: "observability-deployment:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbyQ4MzE2OGQ1MGUwN2U0ZmFhYTk1MjgxNzQxMTUwMzA2NSQzMGRiOWRjOTk4YTc0MGEwYjg0OThmODZhZmRjNTBiMw=="
-# cloud.auth: "elastic:PoFpWBdAoU9Y7kbAU64xXyyh"
+cloud.id: "Observability:dXMtZWFzdC0xLmF3cy5mb3VuZC5pbzo0NDMkMzgxYTU3OGVkYjg2NGQ1N2JiNDdlODNkZTYwMzFmYjIkNmE4NWUzYWFmNzllNDUxMmIyNDg5YzRmMDkxMzZlZDc="
+cloud.auth: "elastic:pahdeR7gu5DbUxHW1VZzVoq1"
 
 # ================================== Outputs ===================================
 
